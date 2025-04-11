@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADEBOLA AZIZAH</title>
+
+  <link rel="icon" href="./C7.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./C7.jpg" type="image/x-icon" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: white;
+      color: #000;
+      padding-top: 80px; /* Prevent navbar from covering content */
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      height: 70px;
+      padding-right: 11%;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 400;
+      text-align: center;
+      flex: 1;
+    }
+
+    .nav-left,
+    .nav-right {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      padding: 5%;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <span class="nav-left"><a style="text-decoration: none; color: black;" href="https://www.tiktok.com/@dimple_queen030?_t=ZM-8vRa4zM8Rs5&_r=1">VLOGS</span></a>
+    <!-- <h1 class="title">PHOTOS</h1> -->
+    <a style="text-decoration: none; color: black;" href="index.html"><span class="nav-right">BACK</span></a>
+  </header>
+
+  <div style="margin-top: 1%;" class="gallery-container">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./c1.jpg" alt="Azizah in red outfit with curly hair" />
+      </div>
+      <div class="gallery-item">
+        <img src="./c2.jpg" alt="Azizah in traditional attire smiling" />
+      </div>
+      <div class="gallery-item">
+        <img src="./c3.jpg" alt="Azizah with a chic hat look" />
+      </div>
+      <div class="gallery-item">
+        <img src="./s1.jpg" alt="Street-style portrait of Azizah" />
+      </div>
+      <div class="gallery-item">
+        <img src="./s2.jpg" alt="Azizah posing near a tree" />
+      </div>
+      <div class="gallery-item">
+        <img src="./s3.jpg" alt="Sunset shot of Azizah outdoors" />
+      </div>
+      <div class="gallery-item">
+        <img src="./C7.jpg" alt="Azizah portrait close-up" />
+      </div>
+      <div class="gallery-item">
+        <img src="./s4.jpg" alt="Azizah in an elegant black gown" />
+      </div>
+      <div class="gallery-item">
+        <img src="./ankaraS.jpg" alt="Azizah wearing Ankara print" />
+      </div>
+      <div class="gallery-item">
+        <img src="./w3.jpg" alt="Studio photo of Azizah with white backdrop" />
+      </div>
+      <div class="gallery-item">
+        <img src="./w2.jpg" alt="Azizah wearing white top and jeans" />
+      </div>
+      <div class="gallery-item">
+        <img src="./w1.jpg" alt="Azizah in a red traditional outfit" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
