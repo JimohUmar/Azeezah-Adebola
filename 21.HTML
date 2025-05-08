@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adebola Azeezah - 21st Era</title>
+    <link rel="shortcut icon" href="./C7.jpg" type="image/x-icon" /> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; 
+            color: #000000;
+            line-height: 1.6;
+            overflow-x: hidden; 
+        }
+
+     
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+     
+        .main-header {
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        .main-header h1 {
+            font-size: 2.5rem; 
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .main-header p {
+            font-size: 1.1rem; 
+            color: #555;
+        }
+
+    
+        .content-section {
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .content-section h2 {
+            font-size: 2rem; /* Base size */
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .content-section h3 {
+            font-size: 1.5rem; /* Base size */
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #444;
+        }
+
+        .content-section .section-intro {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Grid Styles for Images and Videos */
+        .media-grid {
+            display: grid;
+            gap: 20px; /* Gap between grid items */
+        }
+
+        /* Default to 1 column */
+        .media-grid.cols-1 { grid-template-columns: 1fr; }
+        .media-grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } /* Responsive columns */
+        .media-grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        .media-grid.cols-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+
+        .media-grid figure,
+        .media-grid .video-wrapper {
+            margin-bottom: 10px; /* Spacing for items if they stack */
+        }
+        
+        img, video {
+           max-width: 100%;
+           height: auto;
+           display: block; 
+           border-radius: 12px; /* rounded-xl */
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 8px;
+            text-align: center;
+        }
+        
+        .video-wrapper {
+            width: 100%;
+        }
+
+        /* Footer Styles */
+        .main-footer {
+            text-align: center;
+            padding: 25px 15px;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 30px;
+        }
+
+        .main-footer a {
+            color: #555;
+            text-decoration: underline;
+        }
+        .main-footer a:hover {
+            color: #000;
+        }
+
+        /* Animation: Elements to be revealed */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px); /* Start slightly lower */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal-zoom {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal-zoom.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+
+        /* Responsive Typography and Layout Adjustments */
+        @media (min-width: 640px) { /* sm breakpoint */
+            .main-header h1 { font-size: 3rem; }
+            .main-header p { font-size: 1.2rem; }
+            .content-section h2 { font-size: 2.25rem; }
+            .content-section h3 { font-size: 1.75rem; }
+
+          
+        }
+
+        @media (min-width: 768px) { /* md breakpoint */
+            header{
+                justify-items: center;
+            }
+            title{
+                justify-items: center;
+            }
+            .main-header h1 { font-size: 3.5rem; }
+            .main-header p { font-size: 1.25rem; }
+            .content-section h2 { font-size: 2.5rem; }
+            .content-section h3 { font-size: 1.85rem; }
+            .container { width: 85%; }
+            /* .media-grid.md-cols-3 { grid-template-columns: repeat(3, 1fr); } */
+        }
+
+        @media (min-width: 1024px) { /* lg breakpoint */
+            .container { width: 80%; }
+            /* .media-grid.lg-cols-4 { grid-template-columns: repeat(4, 1fr); } */
+        }
+
+    </style>
+</head>
+<body>
+    <header style="justify-items: center;" class="navbar">
+        <span class="nav-left"><a style="text-decoration: none; color: black;" href="https://www.tiktok.com/@dimple_queen030?_t=ZM-8vRa4zM8Rs5&_r=1">VLOGS</span></a>
+        <h1 style="justify-items: center;" class="title">AZEEZAH ADEBOLA ALIM </h1>
+        <a style="text-decoration: none; color: black;"  href="Gallery.html"><span class="nav-right">GALLERY</span></a>
+      </header>
+    <header class="main-header reveal">
+        <h1>Welcome to Azeezah's 21st Era!</h1>
+        <p>Celebrating an incredible journey.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="content-section">
+            <h2 class="reveal">The Realization</h2>
+            <p class="section-intro reveal" data-reveal-delay="100">
+                The celebration wasn't planned but the day turned out to be the greatest birthday I have ever had.
+            </p>
+            <div class="media-grid cols-3"> <figure class="reveal" data-reveal-delay="200">
+                    <img src="p3.jpg" alt="Azeezah smiling, part of birthday realization" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P3+Not+Found';">
+                </figure>
+                <figure class="reveal" data-reveal-delay="300">
+                    <img src="p4.jpg" alt="Azeezah posing, part of birthday realization" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P4+Not+Found';">
+                </figure>
+                <figure class="reveal" data-reveal-delay="400">
+                    <img src="p6.jpg" alt="Azeezah in a thoughtful pose, birthday realization" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P6+Not+Found';">
+                </figure>
+            </div>
+            <div class="video-wrapper reveal" data-reveal-delay="500" style="margin-top: 30px;">
+                <h3>12:00 AM</h3>
+                <video controls>
+                    <source src="Video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag. 
+                </video>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="reveal">The pictures represent exactly how I felt</h2>
+            <div class="media-grid cols-4">
+                <figure class="reveal" data-reveal-delay="200">
+                    <img src="p7.jpg" alt="Expressive photo of Azeezah 1" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P7+Not+Found';">
+                </figure>
+                <figure class="reveal" data-reveal-delay="300">
+                    <img src="p8.jpg" alt="Expressive photo of Azeezah 2" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P8+Not+Found';">
+                </figure>
+                <figure class="reveal" data-reveal-delay="400">
+                    <img src="p9.jpg" alt="Expressive photo of Azeezah 3" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P9+Not+Found';">
+                </figure>
+                <figure class="reveal" data-reveal-delay="500">
+                    <img src="p10.jpg" alt="Expressive photo of Azeezah 4" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P10+Not+Found';">
+                </figure>
+            </div>
+            <div class="media-grid cols-2" style="margin-top: 30px;">
+                <div class="video-wrapper reveal" data-reveal-delay="600">
+                    <h3>The Cake</h3>
+                    <video controls>
+                        <source src="Video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag. 
+                    </video>
+                </div>
+                <div class="video-wrapper reveal" data-reveal-delay="700">
+                    <h3>The Countdown</h3>
+                    <video controls>
+                        <source src="Video2.mp4" type="video/mp4"> Your browser does not support the video tag. 
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="reveal">I'm becoming HER!</h2>
+            <p class="section-intro reveal" data-reveal-delay="100">
+                This Birthday has made me understand and accept that all I have gone through has been preparing for who I have become and who I am meant to be.
+            </p>
+            <div class="media-grid cols-4">
+                <figure class="reveal" data-reveal-delay="200"><img src="p11.jpg" alt="Photo signifying growth 1" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P11+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="250"><img src="p12.jpg" alt="Photo signifying growth 2" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P12+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="300"><img src="p13.jpg" alt="Photo signifying growth 3" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P13+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="350"><img src="p14.jpg" alt="Photo signifying growth 4" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P14+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="400"><img src="p15.jpg" alt="Photo signifying growth 5" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P15+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="450"><img src="p16.jpg" alt="Photo signifying growth 6" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P16+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="500"><img src="p17.jpg" alt="Photo signifying growth 7" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P17+Not+Found';"><figcaption></figcaption></figure>
+            </div>
+            <div class="media-grid cols-3" style="margin-top: 30px;">
+                <div class="video-wrapper reveal-zoom" data-reveal-delay="600">
+                    <h3>Moments of Joy</h3>
+                    <video controls>
+                        <source src="Video5.mp4" type="video/mp4">
+                        Your browser does not support the video tag. 
+                    </video>
+                </div>
+                <div class="video-wrapper reveal-zoom" data-reveal-delay="700">
+                    <h3>Birthday Vibes</h3>
+                    <video controls>
+                        <source src="Video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag. 
+                    </video>
+                </div>
+                <div class="video-wrapper reveal-zoom" data-reveal-delay="800">
+                    <h3>Celebration Highlights</h3>
+                    <video controls>
+                        <source src="p1.mp4" type="video/mp4"> Your browser does not support the video tag. 
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="reveal">Thank you for going through my birthday webpage</h2>
+            <div class="media-grid cols-4">
+                <figure class="reveal" data-reveal-delay="200"><img src="p18.jpg" alt="Thank you image 1" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P18+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="250"><img src="p19.jpg" alt="Thank you image 2" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P19+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="300"><img src="p20.jpg" alt="Thank you image 3" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P20+Not+Found';"><figcaption></figcaption></figure>
+                <figure class="reveal" data-reveal-delay="350"><img src="p21.jpg" alt="Thank you image 4" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/991b1b?text=Image+P21+Not+Found';"><figcaption></figcaption></figure>
+            </div>
+        </section>
+
+        <section class="content-section text-center reveal-zoom" style="border-top: 1px solid #eee; padding-top: 40px;">
+            <h2>Happy 21st Birthday, Azeezah</h2>
+            <p class="section-intro" style="font-size: 1.1rem;">
+                Wishing you the most amazing year ahead, filled with joy, adventure, and everything you dream of. Cheers to your era!
+            </p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Made By <a href="https://x.com/_developersdev?s=21" target="_blank" rel="noopener noreferrer">_DevelopersDev</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for reveal animations
+            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom');
+
+            const observerOptions = {
+                root: null, // relative to document viewport
+                rootMargin: '0px',
+                threshold: 0.1 // 10% of item visible
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const delay = parseInt(el.getAttribute('data-reveal-delay')) || 0;
+                        
+                        setTimeout(() => {
+                            el.classList.add('visible');
+                        }, delay);
+                        
+                        observer.unobserve(el); // Stop observing once visible
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
