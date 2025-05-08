@@ -163,6 +163,9 @@
             .main-header p { font-size: 1.2rem; }
             .content-section h2 { font-size: 2.25rem; }
             .content-section h3 { font-size: 1.75rem; }
+            title{
+                justify-items: center;
+            }
 
           
         }
@@ -171,9 +174,9 @@
             header{
                 justify-items: center;
             }
-            title{
+            /* title{
                 justify-items: center;
-            }
+            } */
             .main-header h1 { font-size: 3.5rem; }
             .main-header p { font-size: 1.25rem; }
             .content-section h2 { font-size: 2.5rem; }
@@ -190,11 +193,33 @@
     </style>
 </head>
 <body>
-    <header style="justify-items: center;" class="navbar">
-        <span class="nav-left"><a style="text-decoration: none; color: black;" href="https://www.tiktok.com/@dimple_queen030?_t=ZM-8vRa4zM8Rs5&_r=1">VLOGS</span></a>
-        <h1 style="justify-items: center;" class="title">AZEEZAH ADEBOLA ALIM </h1>
-        <a style="text-decoration: none; color: black;"  href="Gallery.html"><span class="nav-right">GALLERY</span></a>
-      </header>
+    <header style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  ">
+    <a 
+      href="https://www.tiktok.com/@dimple_queen030?_t=ZM-8vRa4zM8Rs5&_r=1" 
+      style="text-decoration: none; color: black; font-size: 18px; margin: 5px;"
+    >
+      <span>VLOGS</span>
+    </a>
+  
+    <h1 style="font-size: 24px; margin: 10px 0;">AZEEZAH ADEBOLA ALIM</h1>
+  
+    <a 
+      href="Gallery.html" 
+      style="text-decoration: none; color: black; font-size: 18px; margin: 5px;"
+    >
+      <span>GALLERY</span>
+    </a>
+  </header>
+  
+  
     <header class="main-header reveal">
         <h1>Welcome to Azeezah's 21st Era!</h1>
         <p>Celebrating an incredible journey.</p>
